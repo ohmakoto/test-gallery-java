@@ -13,7 +13,7 @@ phases:
     commands:
       - ./gradlew jar
 reports:
-  unit-test-result:
+  unit-report:
     files:
       - build/reports/jacoco/test/jacocreportsoTestReport.xml
     file-format: JACOCOXML
