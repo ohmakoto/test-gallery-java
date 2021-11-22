@@ -24,3 +24,6 @@ reports:
 artifacts:
   files:
     - build/libs/*.jar
+cache:
+  paths:
+    - .gradle/*
