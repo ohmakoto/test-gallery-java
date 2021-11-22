@@ -3,6 +3,9 @@ phases:
   install:
     commands:
       - ./gradlew tasks
+  pre_build:
+    commands:
+      - ./gradlew install
   build:
     commands:
       - ./gradlew clean test jacocoTestReport jar
@@ -10,3 +13,6 @@ reports:
   unit-test-result:
     files:
       - build/reports/jacoco/test/jacocreportsoTestReport.xml
+artifacts:
+  files:
+    - build/libs/*.jar
