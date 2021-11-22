@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - ./gradlew tasks
+  build:
+    commands:
+      - ./gradlew clean test jacocoTestReport jar
+  reports:
+    unit-test-result:
+      files:
+        - build/reports/jacoco/test/jacocoTestReport.xml
