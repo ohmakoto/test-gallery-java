@@ -12,6 +12,9 @@ phases:
   post_build:
     commands:
       - ./gradlew jar
+artifacts:
+  files:
+    - build/libs/*.jar
 reports:
   unit-coverage:
     files:
@@ -21,9 +24,6 @@ reports:
     files:
       - build/test-results/test/*.xml
     file-format: JUNITXML
-artifacts:
-  files:
-    - build/libs/*.jar
 cache:
   paths:
     - .gradle/*
