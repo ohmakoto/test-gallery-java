@@ -11,10 +11,12 @@ phases:
       - ./gradlew clean test jacocoTestReport
   post_build:
     commands:
-      - ./gradlew jar
+      - ./gradlew build
 artifacts:
   files:
-    - build/libs/*.jar
+    - build/libs/test-gallery-0.0.1-SNAPSHOT.jar
+    - scripts/*.sh
+    - appspec.yml
 reports:
   unit-coverage:
     files:
