@@ -12,9 +12,10 @@ phases:
   post_build:
     commands:
       - ./gradlew build
+      - mv build/libs/test-gallery-0.0.1-SNAPSHOT.jar ./test-gallery.jar
 artifacts:
   files:
-    - build/libs/test-gallery-0.0.1-SNAPSHOT.jar
+    - test-gallery.jar
     - scripts/*.sh
     - appspec.yml
 reports:
