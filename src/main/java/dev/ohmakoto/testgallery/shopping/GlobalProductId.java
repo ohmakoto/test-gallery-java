@@ -11,7 +11,7 @@ public class GlobalProductId {
     public String value() {
         return new StringBuilder()
                 .append(sellerId.value())
-                .append("+")
+                .append("-")
                 .append(productCode.value())
                 .toString();
     }
