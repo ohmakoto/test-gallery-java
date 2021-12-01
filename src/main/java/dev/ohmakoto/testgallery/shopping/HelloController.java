@@ -10,4 +10,9 @@ public class HelloController {
     public String index() {
         return "Hello!";
     }
+
+    @GetMapping("/")
+    public String index() {
+        return "Index!";
+    }
 }
